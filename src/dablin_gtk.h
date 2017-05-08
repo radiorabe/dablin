@@ -25,6 +25,8 @@
 #include <thread>
 
 #include <gtkmm.h>
+/* needed for building on platforms with gtkmm < 3.89.5 (CentOS has 3.8.1 at the time of writing) */
+#include <gtkmm/volumebutton.h>
 
 #include "eti_source.h"
 #include "eti_player.h"
